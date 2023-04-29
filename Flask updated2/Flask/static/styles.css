@@ -1,0 +1,465 @@
+/* for total page styling */
+* {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+
+/* for home page(index.html) */
+
+.home{
+  background-color: black;
+  color: aliceblue;
+  font: 'Roboto', sans-serif;
+}
+
+.part1{
+  height: 55em;
+  margin-bottom: 150px;
+}
+
+.header{
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px 0 50px;
+}
+
+.logo img{
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+  padding-top: 5%;
+}
+
+.header_elements{
+  display: flex;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.header_element1{
+  margin-right: 2rem;
+  padding-right: 5px;
+}
+
+.header_element2{
+  margin-right: 2rem;
+  padding-right: 5px;
+}
+
+.header_element3{
+  margin-right: 4rem;
+  padding-right: 5px;
+}
+
+
+
+.navbar_link_style:hover{
+  color: greenyellow;
+}
+
+.header_text{
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.part1_text1{
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.part1_text2{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.part1_button button{
+  background-color: aliceblue;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 20px 30px;
+  border-radius: 40px;
+  margin-top: 25px;
+  cursor: pointer;
+  border: none;
+}
+
+.part2{
+  height: 50rem;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  /*! position: initial; */
+}
+
+.phone_images{
+  left: 10%;
+  /*! position: absolute; */
+  /*! margin-top: 7%; */
+  /*! margin-bottom: 157px; */
+  width: 50%;
+}
+
+/* the transform and translate vales are obtained on trial and error basis */
+.phone1 {
+  transform: translate(0%,20%);
+  z-index: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.phone2 {
+  transform: translate(-50%, 10%);
+  z-index: 4;
+}
+
+.phone3 {
+  transform: translate(-100%,0%);
+  z-index: 5;
+}
+
+.phone4 {
+  transform: translate(-150%, 10%);
+  z-index: 4;
+}
+
+.phone5 {
+  transform: translate(-200%,20%);
+  z-index: 3;
+}
+
+.part3{
+  background-image: url("images/background1.webp");
+  height: auto;
+  position: relative;
+  z-index: 6;
+  width:100%;
+  margin-bottom: 25px;
+}
+
+.part3_content{
+  text-align: left;
+  padding-top: 15rem;
+  padding-left: 7rem;
+}
+
+
+.part3_text1{
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 80%;
+}
+
+.part3_text2 {
+  font-size: 3rem;
+  font-weight: 500;
+  padding-top: 2rem;
+
+}
+
+.part3_text3 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.part3_button button {
+  background-color: aliceblue;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 20px 30px;
+  border-radius: 40px;
+  margin-top: 25px;
+  cursor: pointer;
+  border: none;
+}
+
+.part4 {
+  background-image: url("images/background2.webp");
+  height: 100vh;
+}
+
+.part5 {
+  height: 30vh;
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.part5_icons{
+  padding: 70px 0 50px 0;
+}
+
+.part5_icons i{
+  padding-right: 30px;
+}
+
+.part5_copyright p{
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+
+
+/* About Us page */
+
+.aboutUs{
+  position: absolute;
+  background-color: black;
+  color: aliceblue;
+  font: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+
+}
+
+.aboutUS_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutUs_part1{
+  padding-top: 5rem;
+}
+
+.aboutUs_part1 h1{
+  font-size: 4rem;
+  text-align: center;
+}
+
+.aboutUs_part2{
+  
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+
+}
+    
+.team_member{
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.team_member_image img{
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+.team_member_text1{
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.team_member_text2{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+
+
+/* Credit Score page */
+
+.credit_score{
+  background-color: #865DFF;
+  height: 100vh;
+  color: aliceblue;
+  font: 'Roboto', sans-serif;
+}
+
+.creditScore_body{
+  display: flex;
+  flex-direction: row;
+  padding-top: 8rem;
+  justify-content: space-between;
+  padding-left: 6rem;
+  padding-right: 6rem;
+
+}
+
+.creditScore_body_right form{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.creditScore_body_right input {
+  background-color: black;
+  border-radius: 15px;
+  border: none;
+  color: aliceblue;
+  font-size: 1.5rem;
+  padding: 5%;
+}
+
+
+.creditScore_text1{
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 80%;
+  padding-bottom: 1rem;
+}
+
+.creditScore_text2{
+  font-size: 2rem;
+  font-weight: 500;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.creditScore_button button {
+  background-color: black;
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 20px 30px;
+  border-radius: 40px;
+  margin-top: 25px;
+  cursor: pointer;
+  border: none;
+}
+
+
+
+/* Login Page */
+
+.login{
+  height: 100vh;
+}
+
+.login_header_element {
+  margin-right: 2rem;
+  padding-right: 5px;
+  font-size: 3rem;
+
+}
+
+.login_part2{
+  margin-left: 35%;
+  padding-top: 12rem;
+}
+
+.login_part2 form {
+  font-size: 2rem;
+  border: 3px;
+  width: 200px;
+}
+
+.login_part2 label {
+  font-size: 2rem;
+  border: 3px;
+  width: 200px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.login_part2 input {
+  border-radius: 15px;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 5%;
+}
+
+.login_part2 button {
+  background-color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+  border: none;
+  align-items: center;
+}
+
+.navbar_link_style{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.link_style{
+  text-decoration: none;
+}
+
+body{
+  background-color: black;
+}
+
+.inputField{
+  transition: max-height;
+  overflow: hidden;
+}
+
+.loginPageButtons{
+  color: #865DFF;
+  display: flex;
+}
+
+.loginPage_button{
+  background-color: #865DFF;
+  transition: background-color 1s;
+  cursor: pointer;
+  margin-right: 7%;
+}
+
+/* Charts Page */
+
+.chart{
+  background-color:white;
+  height: 100vh;
+}
+
+.logo_black img {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  padding-top: 5%;
+  padding-left: 15%;
+}
+
+.charts_contaniner{
+  width: 100%;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart_div{
+  position: relative;
+  width: 50%;
+  height: 50%;
+  margin-right: 10%;
+}
+
+.line_chart_div{
+  position: relative;
+  width: 50%;
+  height: 300px;
+  margin-right: 10%;
+}
+
+td{
+  text-align: center;
+}

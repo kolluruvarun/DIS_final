@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BULL - Credit</title>
+  <link rel="icon" type="image/x-icon" href="/static/images/bull logo.jpeg">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    table {
+      border-collapse: collapse;
+      border-collapse: collapse;
+      width: 50%;
+      background-color: white;
+      margin-left: 20%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    th {
+      text-align: center;
+    }
+    td {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="chart">
+  
+    <div class="part1">
+      <div class="header">
+        <div class="logo_black">
+          <a href="../index">
+            <img src="/static/images/usf bull black.jpeg" alt="logo">
+          </a>        
+        </div>
+        <div class="header_elements">
+          <div class="header_element1">
+            <a class="navbar_link_style" href="../credit_score" style="color: black;">
+              Credit Score Check
+            </a>
+          </div>
+          <div class="header_element2">
+            <a class="navbar_link_style" href="../login" id="uid" style="color: black;">
+              id
+            </a>
+          </div>
+          <div class="header_element3">
+            <a class="navbar_link_style" href="../about_us" style="color: black;">
+              About Us
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="charts_contaniner">
+        <div>
+          Your Total credit Balance 
+        </div>
+        <div class="chart_div">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div>
+          Your Monthly Credit Utilization 
+        </div>
+        <div class="line_chart_div">
+          <canvas id="myChart2"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="color:white;margin-left: 20%;font-size: larger;">
+    Monthly Credit Usage
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Transactions</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>January</td>
+        <td>10</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>20</td>
+        <td>$200</td>
+      </tr>
+      <tr>
+        <td>March</td>
+        <td>30</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>April</td>
+        <td>40</td>
+        <td>$400</td>
+      </tr>
+      <tr>
+        <td>May</td>
+        <td>50</td>
+        <td>$500</td>
+      </tr>
+      <tr>
+        <td>June</td>
+        <td>60</td>
+        <td>$600</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>70</td>
+        <td>$700</td>
+      </tr>
+      <tr>
+        <td>August</td>
+        <td>80</td>
+        <td>$800</td>
+      </tr>
+      <tr>
+        <td>September</td>
+        <td>90</td>
+        <td>$900</td>
+      </tr>
+      <tr>
+        <td>October</td>
+        <td>100</td>
+        <td>$1000</td>
+      </tr>
+      <tr>
+        <td>November</td>
+        <td>110</td>
+        <td>$1100</td>
+      </tr>
+      <tr>
+        <td>December</td>
+        <td>120</td>
+        <td>$1200</td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="/static/chart.js"></script>
+
+
+
+</body>
+
+</html>

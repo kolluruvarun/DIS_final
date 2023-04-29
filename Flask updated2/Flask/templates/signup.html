@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Signup Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Email Validation Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    
+  </head>
+
+<body>
+    <div class="home">
+      <div class="login">
+
+        <div class="login_part1">
+          <div class="header">
+            <div class="logo">
+              <a href="../index">
+                <img src="/static/images/usfwhitelogo.png" alt="logo">
+              </a>  
+            </div>
+            <div class="header_elements">
+              <div class="login_header_element">
+                Bull - Credit
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="login_part2">
+          
+            <label id="label1">Uid</label>
+            <input class="inputField" type="text" name="userid" id="idUser" required placeholder="Usf id"><br>
+            <label>Email</label>
+            <input class="inputField" type="email" name="email" id="idEmail" 
+             required placeholder="Email"><br>
+            <label for="password">Password</label>
+            <input class="inputField" type="password" name="password" id="password">
+              <div class="loginPageButtons">
+                
+                
+              </div>   
+          <button id="idSignup" type="button" onclick="" class="loginPage_button">
+            <a href="index.html">Sign Up</a>
+          </button>
+        </div>
+
+      </div>      
+    </div>   
+  <script>
+    function post_user()
+    {
+        var email = $("#idEmail").val();
+        var regno = $("#idUser").val();
+        var password = $("#password").val();
+        var emailRegex = /^\S+@\S+\.\S+$/;
+        var regnoRegex = /^[A-Za-z0-9]{3}-[A-Za-z0-9]{2}-[A-Za-z0-9]{3}$/;
+        var emailError = false;
+        if (!emailRegex.test(email)) {
+          $("#emailError").html("Invalid email format");
+          emailError = true;
+        } else {
+          $("#emailError").html("");
+          emailError = false;
+        }
+        emailError=false;
+        regnoError=false;
+        if (!emailError && !regnoError) {
+          $.ajax({
+            type: "POST",
+            url: "http://127.0.0.1:5000/index",
+            data: {
+              email: email,
+              regno: regno,
+              password: password
+            },
+            success: function() {
+              alert("Signup successful");
+              window.location('/index')
+            },
+            error: function() {
+              alert("Signup failed");
+            }
+          });
+        }
+
+    }
+    document.getElementById("idSignup").addEventListener("click", post_user);
+
+        
+  </script>
+  </body>
+
+</html>

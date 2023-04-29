@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - BULL - Credit</title>
+  <link rel="icon" type="image/x-icon" href="/static/images/bull logo.jpeg">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/login.js"></script>
+ 
+</head>
+
+<body>
+    <div class="home">
+      <div class="login">
+
+        <div class="login_part1">
+          <div class="header">
+            <div class="logo">
+              <a href="../index">
+                <img src="/static/images/usfwhitelogo.png" alt="logo">
+              </a>  
+            </div>
+            <div class="header_elements">
+              <div class="login_header_element">
+                Bull - Credit
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="login_part2">
+          <form  onsubmit="return false" method="post" action="login">
+            <label id="label1">Uid</label>
+            <input class="inputField" type="text" name="userid" id="idUser" required placeholder="Usf id"><br>
+            <label>Email</label>
+            <input class="inputField" type="email" name="email" id="idEmail" 
+             required placeholder="Email"><br>
+            <label for="password">Password</label>
+            <input class="inputField" type="password" name="password" id="password">
+
+              <div class="loginPageButtons">
+                <button onclick="signup()" id="idSignup" class="loginPage_button">
+                  <a class="link_style" href="/signup">
+                    Sign Up
+                  </a>
+                </button>
+                <button id="idLogin" onclick="credentailsValidation()" class="loginPage_button">
+                  <a class="link_style" href="/index">
+                    <p>Login</p>
+                  </a>
+                </button>
+              </div>   
+          </form>
+               
+        </div>
+
+      </div>      
+    </div>   
+</body>
+</html>
